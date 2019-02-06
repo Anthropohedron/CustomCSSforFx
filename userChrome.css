@@ -372,7 +372,7 @@
 /************************************************************************************************/
 
 /* custom tab appearance - [only use one at a time] *********************************************/
-@import "./css/tabs/classic_squared_tabs.css"; /**/
+/* @import "./css/tabs/classic_squared_tabs.css"; /**/
 /* @import "./css/tabs/classic_squared_tabs_australized.css"; /**/
 
 /* custom tab colors are set inside color_variables***.css file(s) ******************************/
@@ -558,7 +558,7 @@
 /* @import "./css/generalui/sidebar_appearance_lwtheme_dark.css"; /**/
 
 /* findbar **************************************************************************************/
-@import "./css/generalui/findbar_on_top.css"; /**/
+/* @import "./css/generalui/findbar_on_top.css"; /**/
 /* @import "./css/generalui/findbar_show_full_quickfindbar.css"; /**/
 /* @import "./css/generalui/findbar_on_top_fade_out_on_hover.css"; /**/
 /* @import "./css/generalui/findbar_compact.css"; /**/
@@ -645,8 +645,8 @@
 /* @import "./css/toolbars/addonbar_extra_bookmarks_toolbar_below_navbar_fx65.css"; /**/  /* <--- EXPERIMENTAL */
  
 /* GENERAL TOOLBAR SETTINGS *********************************************************************/
-@import "./css/toolbars/toolbars_old_padding.css"; /**/
-@import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
+/* @import "./css/toolbars/toolbars_old_padding.css"; /**/
+/* @import "./css/toolbars/tabs_toolbar_adjustments.css"; /**/
 /* @import "./css/toolbars/tabs_toolbar_adjustments_macOS_fix.css"; /**/					/*  <-- macOS fix */
 
 /* edit target file to select which items to hide ***********************************************/
@@ -736,15 +736,15 @@
 /* @import "./css/locationbar/pageaction_button_rotated_and_last_pageaction_button.css"; /**/
 
 /* star button / bookmarks star *****************************************************************/
-@import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
-@import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
+/* @import "./css/locationbar/starbutton_is_last_pageaction_button.css"; /**/
+/* @import "./css/locationbar/starbutton_popup_preview_image_hidden.css"; /**/
 /* alternative yellow star icon - [only use one at a time] **************************************/
 /* @import "./css/locationbar/starbutton_alternative_icon.css"; /**/
 /* @import "./css/locationbar/starbutton_alternative_icon_v2.css"; /**/
 
 /* autocomplete / history dropmarker ************************************************************/
-@import "./css/locationbar/dropmarker_at_the_end.css"; /**/
-@import "./css/locationbar/dropmarker_visible.css"; /**/
+/* @import "./css/locationbar/dropmarker_at_the_end.css"; /**/
+/* @import "./css/locationbar/dropmarker_visible.css"; /**/
 
 
 
