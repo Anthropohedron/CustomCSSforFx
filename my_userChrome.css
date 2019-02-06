@@ -1,21 +1,13 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
 /* show the close (X) button on any hovered tab;
-   probably only one selector is needed *//*
+   probably only one selector is needed */
 tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
 #TabsToolbar .tab-content:hover .tab-close-button.close-icon {
 	display: block !important;
 }
 /**/
 
-/* when dragging a tab, stop things from moving vertically *//*
-#TabsToolbar[movingtab] {
-  padding: 0 !important;
-}
-#TabsToolbar[movingtab] ~ #nav-bar {
-  margin-top: 0 !important;
-}
-/**/
-
-/* put the address/search bars in the "right" place... *//*
+/* put the address/search bars in the "right" place... */
 #nav-bar-customization-target toolbarbutton,
 #nav-bar-customization-target toolbaritem {
   -moz-box-ordinal-group: 3;
@@ -34,7 +26,7 @@ tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
 }
 /**/
 
-/* ...but expand when hovered *//*
+/* ...but expand when hovered */
 #urlbar-container:hover ~ *,
 #search-container:hover:focus-within ~ * {
   display: none !important;
@@ -53,6 +45,7 @@ tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
 /* hide things I don't want in my way */
 #new-tab-button,
 #pocket-button,
+#searchbar .search-go-container,
 #star-button {
 	display: none !important;
 }
@@ -63,3 +56,21 @@ tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
 	font-size: 8pt;
 }
 /**/
+
+/* color the temporary container button so it can be seen */
+toolbarbutton[label*="new Temporary Container"] {
+  border-radius: 130px;
+  background: #755;
+}
+toolbarbutton[label*="new Temporary Container"]:hover {
+  background: #977;
+}
+toolbarbutton[label*="new Temporary Container"] .toolbarbutton-badge-stack {
+  background: transparent !important;
+}
+/**/
+
+.tabbrowser-tab .tab-content .tab-label {
+  font-weight: normal !important;
+  font-style: normal !important;
+}
