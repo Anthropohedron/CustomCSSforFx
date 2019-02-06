@@ -1,0 +1,65 @@
+/* show the close (X) button on any hovered tab;
+   probably only one selector is needed *//*
+tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
+#TabsToolbar .tab-content:hover .tab-close-button.close-icon {
+	display: block !important;
+}
+/**/
+
+/* when dragging a tab, stop things from moving vertically *//*
+#TabsToolbar[movingtab] {
+  padding: 0 !important;
+}
+#TabsToolbar[movingtab] ~ #nav-bar {
+  margin-top: 0 !important;
+}
+/**/
+
+/* put the address/search bars in the "right" place... *//*
+#nav-bar-customization-target toolbarbutton,
+#nav-bar-customization-target toolbaritem {
+  -moz-box-ordinal-group: 3;
+}
+#nav-bar-customization-target #search-container {
+  -moz-box-ordinal-group: 2;
+}
+#nav-bar-customization-target #urlbar-container {
+	-moz-box-ordinal-group: 1;
+}
+#nav-bar-customization-target #back-button,
+#nav-bar-customization-target #forward-button,
+#nav-bar-customization-target #stop-reload-button,
+#nav-bar-customization-target #home-button {
+  -moz-box-ordinal-group: 0;
+}
+/**/
+
+/* ...but expand when hovered *//*
+#urlbar-container:hover ~ *,
+#search-container:hover:focus-within ~ * {
+  display: none !important;
+}
+#nav-bar-customization-target:hover #urlbar-container,
+#nav-bar-customization-target:hover #search-container {
+  min-width: 100px !important;
+}
+#nav-bar-customization-target:hover #urlbar-container:hover,
+#nav-bar-customization-target:hover #search-container:hover:focus-within {
+	display: -moz-box !important;
+  max-width: 6000px !important;
+}
+/**/
+
+/* hide things I don't want in my way */
+#new-tab-button,
+#pocket-button,
+#star-button {
+	display: none !important;
+}
+/**/
+
+/* smaller text */
+#urlbar, .searchbar-textbox {
+	font-size: 8pt;
+}
+/**/
