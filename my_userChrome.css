@@ -1,10 +1,37 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
 /* show the close (X) button on any hovered tab;
    probably only one selector is needed */
+
 tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
 #TabsToolbar .tab-content:hover .tab-close-button.close-icon {
 	display: block !important;
 }
+/**/
+
+/* Fix bizarre broken layout in tabs with FF72 */
+#TabsToolbar .tab-content .tab-close-button.close-icon {
+	position: relative;
+	top: -20px;
+	left: calc(100% - 20px);
+}
+
+#TabsToolbar .tab-content {
+	height: 26px;
+	max-height: 26px;
+	margin-top: 3px;
+	border-bottom: 2px solid var(--identity-tab-color);
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+
+#TabsToolbar .tab-content .tab-label-container {
+	max-width: calc(100% - 24px);
+}
+
+#TabsToolbar .tab-content > * {
+	vertical-align: text-top;
+}
+
 /**/
 
 /* put the address/search bars in the "right" place... */
@@ -74,3 +101,4 @@ toolbarbutton[label*="new Temporary Container"] .toolbarbutton-badge-stack {
   font-weight: normal !important;
   font-style: normal !important;
 }
+/**/
