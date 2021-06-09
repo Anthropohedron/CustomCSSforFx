@@ -8,6 +8,13 @@ tabs#tabbrowser-tabs tab.tabbrowser-tab:hover .tab-close-button.close-icon,
 }
 /**/
 
+/* tab bar placement */
+#TabsToolbar {
+	position: absolute !important;
+	top: 68px;
+	overflow: hidden;
+}
+
 /* Fix bizarre broken layout in tabs with FF72 */
 #TabsToolbar .tab-content .tab-close-button.close-icon {
 	position: relative;
